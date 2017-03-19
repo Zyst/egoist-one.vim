@@ -1,10 +1,10 @@
 " Vim Color File
 " Name:       onedark.vim
-" Maintainer: https://github.com/joshdick/onedark.vim/
+" Maintainer: https://github.com/Zyst/onedark.vim/
 " License:    The MIT License (MIT)
-" Based On:   https://github.com/MaxSt/FlatColor/
+" Based On:   https://github.com/joshdick/onedark.vim/
 
-" A companion [vim-airline](https://github.com/bling/vim-airline) theme is available at: https://github.com/joshdick/airline-onedark.vim
+" Why did I fork? I hate pink with a passion, so I really need it gone.
 
 " +-----------------+
 " | Color Reference |
@@ -39,6 +39,14 @@
 " |--------------+--------------------+---------|
 " | Comment Grey | rgb(92, 99, 112)   | #5c6370 |
 " +---------------------------------------------+
+
+" I just swapped these two
+" |--------------+--------------------+---------|
+" | Magenta      | rgb(198, 120, 221) | #c678dd |
+" |--------------+--------------------+---------|
+" |--------------+--------------------+---------|
+" | Dark Yellow  | rgb(198, 120, 221) | #c678dd |
+" |--------------+--------------------+---------|
 
 " +----------------+
 " | Initialization |
@@ -116,11 +124,11 @@ let s:dark_red = { "gui": "#BE5046", "cterm": "196", "cterm16": "9" }
 let s:green = { "gui": "#98C379", "cterm": "114", "cterm16": "2" }
 
 let s:yellow = { "gui": "#E5C07B", "cterm": "180", "cterm16": "3" }
-let s:dark_yellow = { "gui": "#D19A66", "cterm": "173", "cterm16": "11" }
+let s:purple = { "gui": "#D19A66", "cterm": "173", "cterm16": "11" }
 
 let s:blue = { "gui": "#61AFEF", "cterm": "39", "cterm16": "4" }
 
-let s:purple = { "gui": "#C678DD", "cterm": "170", "cterm16": "5" }
+let s:dark_yellow = { "gui": "#C678DD", "cterm": "170", "cterm16": "5" }
 
 let s:cyan = { "gui": "#56B6C2", "cterm": "38", "cterm16": "6" }
 
