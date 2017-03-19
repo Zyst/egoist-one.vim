@@ -266,11 +266,11 @@ call s:h("goDeclaration", { "fg": s:purple })
 
 " HTML
 call s:h("htmlTitle", { "fg": s:white })
-call s:h("htmlArg", { "fg": s:dark_yellow })
+call s:h("htmlArg", { "fg": s:yellow })
 call s:h("htmlEndTag", { "fg": s:white })
 call s:h("htmlH1", { "fg": s:white })
 call s:h("htmlLink", { "fg": s:purple })
-call s:h("htmlSpecialChar", { "fg": s:dark_yellow })
+call s:h("htmlSpecialChar", { "fg": s:yellow })
 call s:h("htmlSpecialTagName", { "fg": s:red })
 call s:h("htmlTag", { "fg": s:white })
 call s:h("htmlTagName", { "fg": s:red })
