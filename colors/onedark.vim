@@ -285,7 +285,7 @@ call s:h("javaScriptRequire", { "fg": s:cyan })
 call s:h("javaScriptReserved", { "fg": s:purple })
 
 " https://github.com/pangloss/vim-javascript
-call s:h("jsArrowFunction", { "fg": s:purple })
+call s:h("jsArrowFunction", { "fg": s:cyan })
 call s:h("jsClassKeyword", { "fg": s:purple })
 call s:h("jsClassMethodType", { "fg": s:purple })
 call s:h("jsDocParam", { "fg": s:blue })
