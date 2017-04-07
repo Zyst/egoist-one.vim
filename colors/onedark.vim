@@ -28,6 +28,8 @@
 " | Light Yellow | rgb(229, 192, 123) | #e5c07b |
 " |--------------+--------------------+---------|
 " | Dark Yellow  | rgb(209, 154, 102) | #d19a66 |
+" |--------------+--------------------+---------| 
+" | Orange       | rgb(249, 145, 87)  | #f99157 |
 " |--------------+--------------------+---------|
 " | Blue         | rgb(97, 175, 239)  | #61afef |
 " |--------------+--------------------+---------|
@@ -125,6 +127,7 @@ let s:green = { "gui": "#98C379", "cterm": "114", "cterm16": "2" }
 
 let s:yellow = { "gui": "#E5C07B", "cterm": "180", "cterm16": "3" } 
 let s:dark_yellow = { "gui": "#D19A66", "cterm": "173", "cterm16": "11" }
+let s:orange = { "gui": "#F99157", "cterm": "173", "cterm16": "11" }
 
 let s:blue = { "gui": "#61AFEF", "cterm": "39", "cterm16": "4" }
 
@@ -288,7 +291,6 @@ call s:h("javaScriptReserved", { "fg": s:purple })
 call s:h("jsArrowFunction", { "fg": s:cyan })
 call s:h("jsClassKeyword", { "fg": s:purple })
 call s:h("jsClassMethodType", { "fg": s:purple })
-call s:h("jsDestructuringBlock", { "fg": s:dark_yellow })
 call s:h("jsDocParam", { "fg": s:blue })
 call s:h("jsDocTags", { "fg": s:purple })
 call s:h("jsExport", { "fg": s:purple })
