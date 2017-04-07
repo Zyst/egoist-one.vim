@@ -466,7 +466,7 @@ call s:h("typescriptBraces", { "fg": s:white })
 " XML
 call s:h("xmlAttrib", { "fg": s:dark_yellow })
 call s:h("xmlEndTag", { "fg": s:white })
-call s:h("xmlTag", { "fg": s:red })
+call s:h("xmlTag", { "fg": s:white })
 call s:h("xmlTagName", { "fg": s:red })
 
 " +---------------------+
