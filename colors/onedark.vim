@@ -269,7 +269,7 @@ call s:h("goDeclaration", { "fg": s:purple })
 
 " HTML
 call s:h("htmlTitle", { "fg": s:white })
-call s:h("htmlArg", { "fg": s:yellow })
+call s:h("htmlArg", { "fg": s:dark_yellow })
 call s:h("htmlEndTag", { "fg": s:white })
 call s:h("htmlH1", { "fg": s:white })
 call s:h("htmlLink", { "fg": s:purple })
@@ -464,7 +464,7 @@ call s:h("typescriptEndColons", { "fg": s:white })
 call s:h("typescriptBraces", { "fg": s:white })
 
 " XML
-call s:h("xmlAttrib", { "fg": s:yellow })
+call s:h("xmlAttrib", { "fg": s:dark_yellow })
 call s:h("xmlEndTag", { "fg": s:red })
 call s:h("xmlTag", { "fg": s:red })
 call s:h("xmlTagName", { "fg": s:red })
