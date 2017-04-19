@@ -15,7 +15,7 @@
 " +---------------------------------------------+
 " |  Color Name  |         RGB        |   Hex   |
 " |--------------+--------------------+---------|
-" | Black        | rgb(40, 44, 52)    | #282c34 |
+" | Black        | rgb(40, 44, 52)    | #262626 |
 " |--------------+--------------------+---------|
 " | White        | rgb(171, 178, 191) | #abb2bf |
 " |--------------+--------------------+---------|
@@ -170,7 +170,7 @@ call s:h("Include", { "fg": s:blue }) " preprocessor #include
 call s:h("Define", { "fg": s:purple }) " preprocessor #define
 call s:h("Macro", { "fg": s:purple }) " same as Define
 call s:h("PreCondit", { "fg": s:yellow }) " preprocessor #if, #else, #endif, etc.
-call s:h("Type", { "fg": s:yellow }) " int, long, char, etc.
+call s:h("Type", { "fg": s:yellow "gui": "italic", "cterm": "italic" }) " int, long, char, etc.
 call s:h("StorageClass", { "fg": s:yellow }) " static, register, volatile, etc.
 call s:h("Structure", { "fg": s:yellow }) " struct, union, enum, etc.
 call s:h("Typedef", { "fg": s:yellow }) " A typedef
@@ -204,7 +204,7 @@ call s:h("ErrorMsg", { "fg": s:red }) " error messages on the command line
 call s:h("VertSplit", { "fg": s:vertsplit }) " the column separating vertically split windows
 call s:h("Folded", { "fg": s:comment_grey }) " line used for closed folds
 call s:h("FoldColumn", {}) " 'foldcolumn'
-call s:h("SignColumn", {}) " column where signs are displayed
+call s:h("SignColumn", { "bg": s:black }) " column where signs are displayed
 call s:h("IncSearch", { "fg": s:black, "bg": s:yellow }) " 'incsearch' highlighting; also used for the text replaced with ":s///c"
 call s:h("LineNr", { "fg": s:gutter_fg_grey }) " Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
 call s:h("CursorLineNr", { "fg": s:blue }) " Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
@@ -265,7 +265,7 @@ call s:h("goDeclaration", { "fg": s:purple })
 
 " HTML
 call s:h("htmlTitle", { "fg": s:white })
-call s:h("htmlArg", { "fg": s:dark_yellow })
+call s:h("htmlArg", { "fg": s:dark_yellow "gui": "italic", "cterm": "italic" })
 call s:h("htmlEndTag", { "fg": s:white })
 call s:h("htmlH1", { "fg": s:white })
 call s:h("htmlLink", { "fg": s:purple })
@@ -313,7 +313,7 @@ call s:h("jsStorageClass", { "fg": s:purple })
 call s:h("jsSuper", { "fg": s:red })
 call s:h("jsTemplateBraces", { "fg": s:dark_red })
 call s:h("jsTemplateVar", { "fg": s:green })
-call s:h("jsThis", { "fg": s:red })
+call s:h("jsThis", { "fg": s:red "gui": "italic", "cterm": "italic" })
 call s:h("jsUndefined", { "fg": s:dark_yellow }) 
 
 " https://github.com/othree/yajs.vim
@@ -466,7 +466,7 @@ call s:h("typescriptEndColons", { "fg": s:white })
 call s:h("typescriptBraces", { "fg": s:white })
 
 " XML
-call s:h("xmlAttrib", { "fg": s:dark_yellow })
+call s:h("xmlAttrib", { "fg": s:dark_yellow "gui": "italic", "cterm": "italic" })
 call s:h("xmlEndTag", { "fg": s:white })
 call s:h("xmlTag", { "fg": s:white })
 call s:h("xmlTagN", { "fg": s:red })
@@ -480,11 +480,13 @@ call s:h("xmlTagName", { "fg": s:red })
 hi link GitGutterAdd    SignifySignAdd
 hi link GitGutterChange SignifySignChange
 hi link GitGutterDelete SignifySignDelete
+hi link GitGutterChangeDelete SignifySignChangeDelete
 
 " mhinz/vim-signify
-call s:h("SignifySignAdd", { "fg": s:green })
-call s:h("SignifySignChange", { "fg": s:yellow })
-call s:h("SignifySignDelete", { "fg": s:red })
+call s:h("SignifySignAdd", { "bg": s:black, "fg": s:white })
+call s:h("SignifySignChange", { "bg": s:black, "fg": s:white })
+call s:h("SignifySignDelete", { "bg": s:black, "fg": s:white })
+call s:h("SignifySignChangeDelete", { "bg": s:black, "fg": s:white })
 
 " neomake/neomake
 call s:h("NeomakeWarningSign", { "fg": s:yellow })
@@ -518,6 +520,11 @@ hi link gitcommitSelected gitcommitComment
 hi link gitcommitDiscardedArrow gitcommitDiscardedFile
 hi link gitcommitSelectedArrow gitcommitSelectedFile
 hi link gitcommitUnmergedArrow gitcommitUnmergedFile
+
+" +------------------+
+" | Nerd Tree        |
+" +------------------+
+call s:h("NERDTreeGitStatusModified", { "bg": s:black, "fg": s:white })
 
 " +------------------------+
 " | Neovim terminal colors |
