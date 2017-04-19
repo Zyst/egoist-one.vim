@@ -170,7 +170,7 @@ call s:h("Include", { "fg": s:blue }) " preprocessor #include
 call s:h("Define", { "fg": s:purple }) " preprocessor #define
 call s:h("Macro", { "fg": s:purple }) " same as Define
 call s:h("PreCondit", { "fg": s:yellow }) " preprocessor #if, #else, #endif, etc.
-call s:h("Type", { "fg": s:yellow "gui": "italic", "cterm": "italic" }) " int, long, char, etc.
+call s:h("Type", { "fg": s:yellow, "gui": "italic", "cterm": "italic" }) " int, long, char, etc.
 call s:h("StorageClass", { "fg": s:yellow }) " static, register, volatile, etc.
 call s:h("Structure", { "fg": s:yellow }) " struct, union, enum, etc.
 call s:h("Typedef", { "fg": s:yellow }) " A typedef
@@ -265,7 +265,7 @@ call s:h("goDeclaration", { "fg": s:purple })
 
 " HTML
 call s:h("htmlTitle", { "fg": s:white })
-call s:h("htmlArg", { "fg": s:dark_yellow "gui": "italic", "cterm": "italic" })
+call s:h("htmlArg", { "fg": s:dark_yellow, "gui": "italic", "cterm": "italic" })
 call s:h("htmlEndTag", { "fg": s:white })
 call s:h("htmlH1", { "fg": s:white })
 call s:h("htmlLink", { "fg": s:purple })
@@ -313,7 +313,7 @@ call s:h("jsStorageClass", { "fg": s:purple })
 call s:h("jsSuper", { "fg": s:red })
 call s:h("jsTemplateBraces", { "fg": s:dark_red })
 call s:h("jsTemplateVar", { "fg": s:green })
-call s:h("jsThis", { "fg": s:red "gui": "italic", "cterm": "italic" })
+call s:h("jsThis", { "fg": s:red, "gui": "italic", "cterm": "italic" })
 call s:h("jsUndefined", { "fg": s:dark_yellow }) 
 
 " https://github.com/othree/yajs.vim
@@ -466,7 +466,7 @@ call s:h("typescriptEndColons", { "fg": s:white })
 call s:h("typescriptBraces", { "fg": s:white })
 
 " XML
-call s:h("xmlAttrib", { "fg": s:dark_yellow "gui": "italic", "cterm": "italic" })
+call s:h("xmlAttrib", { "fg": s:dark_yellow, "gui": "italic", "cterm": "italic" })
 call s:h("xmlEndTag", { "fg": s:white })
 call s:h("xmlTag", { "fg": s:white })
 call s:h("xmlTagN", { "fg": s:red })
