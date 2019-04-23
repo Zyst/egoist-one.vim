@@ -603,7 +603,6 @@ endif
 " https://github.com/pangloss/vim-javascript
 call s:h("jsObjectKey", { "fg": s:yellow })
 call s:h("jsObjectValue", { "fg": s:red })
-call s:h("jsParen", { "fg": s:red })
 call s:h("jsArrowFunction", { "fg": s:cyan })
 
 "JS 'this'
