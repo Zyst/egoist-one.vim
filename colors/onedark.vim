@@ -598,6 +598,44 @@ endif
 
 " }}}
 
+" Egoist one specific overrides {{{
+" JavaScript {{{
+" https://github.com/pangloss/vim-javascript
+call s:h("jsObjectKey", { "fg": s:yellow })
+call s:h("jsObjectValue", { "fg": s:red })
+call s:h("jsParen", { "fg": s:red })
+call s:h("jsArrowFunction", { "fg": s:cyan })
+
+"JS 'this'
+highlight jsthis gui=italic
+highlight jsthis cterm=italic
+" }}}
+
+" XML {{{
+call s:h("xmlTag", { "fg": s:white })
+
+" XML Args (For JSX)
+highlight xmlAttrib gui=italic
+highlight xmlAttrib cterm=italic
+" }}}
+
+" HTML {{{
+" Italic HTML Args
+highlight htmlArg gui=italic
+highlight htmlArg cterm=italic
+" }}}
+
+" General styling {{{
+" Italic comments
+highlight Comment gui=italic
+highlight Comment cterm=italic
+
+" Types
+highlight Type gui=italic
+highlight Type cterm=italic
+" }}}
+" }}}
+
 " Must appear at the end of the file to work around this oddity:
 " https://groups.google.com/forum/#!msg/vim_dev/afPqwAFNdrU/nqh6tOM87QUJ
 set background=dark
