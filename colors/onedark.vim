@@ -624,6 +624,10 @@ highlight htmlArg gui=italic
 highlight htmlArg cterm=italic
 " }}}
 
+" SCSS {{{
+call s:h("scssAmpersand", { "fg": s:red })
+" }}}
+
 " General styling {{{
 " Italic comments
 highlight Comment gui=italic
